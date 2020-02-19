@@ -1,0 +1,150 @@
+/* grid */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+/* text styling */
+.container>* {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* navbar styles */
+.container .topNav {
+    border-bottom: 2px black solid;
+    padding-bottom: 0;
+    background-color: #E8E8E8;
+}
+
+/* nav link styling */
+.topNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav link button styling */
+.tablinks {
+    outline: none;
+    padding: 10px 14px 10px 14px;
+    cursor: pointer;
+}
+
+/* Planview logo in header*/
+.logo {
+    max-height: 50px;
+    width: auto;
+    padding: 2%;
+}
+
+/* footer styling */
+footer {
+    border-top: 2px solid black;
+}
+
+/* media query for grid layout */
+@media only screen and (min-width: 600px) {
+    
+    /* grid */
+    .container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    /* specific item styles */
+    .container header,
+    .container nav,
+    .container footer {
+        grid-column: span 4;
+    }
+    
+    .container section {
+        grid-column: span 2;
+    }
+    
+    .container aside {
+        grid-column: span 2;
+    }
+    
+    /* article styling */
+    .tabcontent p {
+        padding: 5% 5% 0 5%;
+    }
+    
+    /* side nav UL styling */
+    #desc {
+        padding-right: 5%;
+    }
+
+    /* nav link styles */
+    .topNav ul li {
+        display: inline-block;
+        overflow: hidden;
+        border-right: 1px solid darkgray;
+    }
+
+    /* last nav link - remove side border */
+    .topNav ul li:last-of-type {
+        border-right: none;
+    }
+
+    /* hide toggle */
+    .toggle {
+        display: none;
+    }
+
+}
+
+/* media query for mobile styles */
+@media only screen and (max-width: 599px) {
+
+    /* pop-out functionality for nav menu */
+    #nav {
+        transition: transform .3s ease-in-out;
+        top: 0;
+        bottom: 0;
+        position: fixed;
+        width: 300px;
+        right: -340px;
+    }
+
+    #nav:target {
+        transform: translateX(-340px);
+    }
+
+    /* element to open hamburger menu */
+    .open {
+        float: right;
+    }
+
+    /* hamburger menu image */
+    .open img {
+        max-height: 70px;
+        width: auto;
+        padding: 2%;
+    }
+
+    /* nav link styling in popout menu */
+    .tab {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        grid-gap: 1em;
+    }
+
+    /* button to close pop-out menu */
+    .close {
+        text-align: right;
+        display: block;
+        text-decoration: none;
+        font-size: 3em;
+        position: relative;
+        top: -30px;
+    }
+
+    /* main section styling */
+    .main {
+        padding: 3% 5% 5% 5%;
+    }
+}

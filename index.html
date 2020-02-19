@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planview Video Archive</title>
+    <link rel="shortcut icon" href="https://media.planview.com/favicon/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- header with logo and responsive hamburger menu -->
+        <header role="banner">
+            <a href="#">
+                <img class="logo" alt="Planview logo"
+                    src="http://d1ru3055gppavs.cloudfront.net/img/logo-planview-full-color.svg" alt="">
+            </a>
+            <a class="toggle open" href="#nav">
+                <img src="assets/hamburger-menu.png" alt="hamburger-menu">
+            </a>
+        </header>
+
+        <!-- navbar listing tracks, turning into pop-out nav on mobile -->
+        <nav id="nav" role="navigation" class="topNav">
+            <a class="toggle close" href="#">×</a>
+            <ul class="tab"></ul>
+        </nav>
+
+        <!-- side nav listing titles for selected track -->
+        <aside class="sideNav">
+            <h2 class="ul-title"></h2>
+            <ul id="desc"></ul>
+        </aside>
+
+        <!-- section displaying article for selected title -->
+        <section role="main" class="main">
+            <div class="article-title"></div>
+            <article class="tabcontent"></article>
+        </section>
+
+        <footer>
+            <p>made by Mark</p>
+        </footer>
+
+    </div>
+
+    <script src="js/sessions.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
