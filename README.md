@@ -1,6 +1,6 @@
-# Planview Static SPA
+# VanillaJS Static SPA
 ```
-coding assessment
+
 ```
 ---
 ## [Live Verison of SPA](https://markcmurphy.github.io/planview-SPA/index.html)
@@ -10,14 +10,6 @@ coding assessment
 - HTML 
 - CSS / CSS Grid 
 - Vanilla JavaScript
-
-**Why vanilla JavaScript?**
-
-Everything else felt like overkill for a static SPA. Even jQuery seemed like it would add unnecessary bloat. I considered using GatsbyJS since I have been wanting to experiment with it, but vanilla JS sounded like a fun challenge. 
-
-**So no libraries or frameworks at all?**
-
-Nope. I likely would have used Bootstrap to save time, but it was mentioned the team doesn't use it. I initially made the UI with Skeleton but then went back and spent time learning CSS Grid and recreating it with that. 
 
 **Is it mobile responsive?**
 
